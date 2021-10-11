@@ -1,0 +1,10 @@
+a {
+  /* default anchor styles */
+  color: orange;
+  padding: 1rem;
+}
+
+a.active {
+  /* if this link matches the url */
+  color: skyblue;
+}
