@@ -1,10 +1,10 @@
 ### Instructions
 
-- [ ] Use fetch() to asynchronously retrieve data from a remote API.
+- [x] Use fetch() to asynchronously retrieve data from a remote API.
 
-- [ ] Use the data from the RandomUser API(opens new window)
+- [x] Use the data from the RandomUser API(opens new window)
 
-- [ ] For the request parameters use:
+- [x] For the request parameters use:
 - your own Algonquin username as the seed value
 - a number between 16 and 32 for the results value
 - format should be set to json
@@ -13,7 +13,7 @@
 
 - [ ] The Home page should display a welcome message and brief instructions on how to use the app.
 
-- [ ] Your app should show a list of user cards on the User List page that display the values for name, email, cell, plus a medium or thumbnail image.
+- [x] Your app should show a list of user cards on the User List page that display the values for name, email, cell, plus a medium or thumbnail image.
 
 - [ ] There needs to be a link from each displayed card for more details for the selected user on a User Details page.
 
