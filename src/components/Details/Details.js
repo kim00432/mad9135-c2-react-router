@@ -1,27 +1,35 @@
-import {useParams, useLocation, useHistory} from 'react-router-dom'
-import {useEffect, useState} from 'react'
+import {useParams} from 'react-router-dom'
+
 
 export default function Details(props) {
-    // console.log(props)
-    // // props.item - will ne our single planet object 
+     function findUser(id) {
+        return props.data.find((item, index)=> {
+            return id == parseInt(item.userId)
+        })
+    }
 
-    // const [detail, setDetail] = useState({})
-
+    // const [page, setPage] = useState({})
 
     let { id } = useParams() //hooks from React router dom
-    // let loc = useLocation()
-    // let history = useHistory()
-   
+    let data = findUser(id)
+    console.log(data)
+
     // useEffect(()=> {
-    //     let p = props.findUser(id)
-    //     setDetail(p)
+    //     let data = findUser(id)
+    //     setPage(data)
     //     //wait until after render
     // }, [])
 
     return (
-        <div className="user-details">
-            <p>{id}</p>      
-            <p>This is the user details</p>
+        <div className="user-details">   
+            <img src={data.picture.large} alt=""></img>
+            <p>{data.name.first} {data.name.last}</p>
+            <p>Cell: {data.cell}</p>
+            <p>Email: {data.email}</p>
+            <p>Address: {data.address}</p>
+            <p>Login Information</p>
+            <p>Username: {data.login.username}, Password: {data.login.password}</p>
+            <p>UUID: {data.login.uuid}</p>
         </div>
     )
 }

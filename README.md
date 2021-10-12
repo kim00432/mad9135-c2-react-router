@@ -15,16 +15,16 @@
 
 - [x] Your app should show a list of user cards on the User List page that display the values for name, email, cell, plus a medium or thumbnail image.
 
-- [ ] There needs to be a link from each displayed card for more details for the selected user on a User Details page.
+- [x] There needs to be a link from each displayed card for more details for the selected user on a User Details page.
 
-- [ ] The User Details page should show the full address (street, city, state, postcode), login information (uuid, username, password), and a larger image
+- [x] The User Details page should show the full address (street, city, state, postcode), login information (uuid, username, password), and a larger image
 
 - [ ] There should be a top-level nav menu that lets the website user see a list of all of the names and addresses sorted by last name. This is the Address List page.
 
-- [ ] You can also link a row in the Address List table to the User Details page.
+- [x] You can also link a row in the Address List table to the User Details page.
 
 - [ ] If the user manually adds a URL that has no match then the app should redirect to the Home page or a 404 Error page.
 
-- [ ] React Router (opens new window)should be used for all navigation.
+- [x] React Router (opens new window)should be used for all navigation.
 
 - [ ] While data is being loaded in any component you should have a message/icon/indicator that data is loading. Animated is best because it gets the user's attention.

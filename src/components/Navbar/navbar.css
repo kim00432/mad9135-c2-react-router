@@ -8,3 +8,7 @@ a.active {
   /* if this link matches the url */
   color: skyblue;
 }
+
+.navbar {
+  font-size: 1.5rem;
+}

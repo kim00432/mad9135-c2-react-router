@@ -11,12 +11,19 @@
 .user_card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
   border-radius: 20px;
-  padding: 20px;
-  margin: 10px;
-  background-color: skyblue;
-  color: white;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(0, 150, 209);
   font-weight: bold;
   backdrop-filter: blur(5px);
   align-items: center;
   text-align: center;
+}
+
+.user_info {
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
