@@ -6,7 +6,8 @@ a {
 
 a.active {
   /* if this link matches the url */
-  color: skyblue;
+  color: rgb(3, 98, 161);
+  font-weight: 600;
 }
 
 .navbar {

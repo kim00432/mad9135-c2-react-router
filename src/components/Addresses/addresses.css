@@ -1,0 +1,16 @@
+.addressList {
+  margin-top: 2rem;
+}
+
+.detailLink:hover {
+  color: rgb(0, 81, 128);
+}
+
+img {
+  border-radius: 50%;
+}
+
+th.tableHead {
+  text-align: center;
+  font-size: 1rem;
+}

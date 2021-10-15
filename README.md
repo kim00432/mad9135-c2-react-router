@@ -23,8 +23,8 @@
 
 - [x] You can also link a row in the Address List table to the User Details page.
 
-- [ ] If the user manually adds a URL that has no match then the app should redirect to the Home page or a 404 Error page.
+- [x] If the user manually adds a URL that has no match then the app should redirect to the Home page or a 404 Error page.
 
 - [x] React Router (opens new window)should be used for all navigation.
 
-- [ ] While data is being loaded in any component you should have a message/icon/indicator that data is loading. Animated is best because it gets the user's attention.
+- [x] While data is being loaded in any component you should have a message/icon/indicator that data is loading. Animated is best because it gets the user's attention.

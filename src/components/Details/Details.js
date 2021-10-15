@@ -1,35 +1,38 @@
-import {useParams} from 'react-router-dom'
-
+import './details.css'
+import Loader from '../Loader/Loader'
+import { useParams } from 'react-router-dom'
 
 export default function Details(props) {
-     function findUser(id) {
-        return props.data.find((item, index)=> {
-            return id == parseInt(item.userId)
-        })
+    console.log(props)
+    
+    function findUser(id) {
+        return props.data.find((item, index) => id == parseInt(item.userId))
     }
 
-    // const [page, setPage] = useState({})
-
     let { id } = useParams() //hooks from React router dom
-    let data = findUser(id)
-    console.log(data)
+    let detail = findUser(id)
+    console.log(detail)
 
-    // useEffect(()=> {
-    //     let data = findUser(id)
-    //     setPage(data)
-    //     //wait until after render
-    // }, [])
-
+    if(props.data.length === 0) {return <Loader />}
     return (
-        <div className="user-details">   
-            <img src={data.picture.large} alt=""></img>
-            <p>{data.name.first} {data.name.last}</p>
-            <p>Cell: {data.cell}</p>
-            <p>Email: {data.email}</p>
-            <p>Address: {data.address}</p>
-            <p>Login Information</p>
-            <p>Username: {data.login.username}, Password: {data.login.password}</p>
-            <p>UUID: {data.login.uuid}</p>
+        <div className="user_container">  
+            <div className="user_details">
+                <div className="user_details_info1">
+                    <p className="user_name">{detail.name.first} {detail.name.last}</p>
+                    <img src={detail.picture.large} alt=""></img>
+                </div>
+                <div className="user_details_info2">
+                    <p className="user_cell">Cell: <span className="user_cell_info">{detail.cell}</span></p>
+                    <p className="user_email">Email: <span className="user_email_info">{detail.email}</span></p>
+                    <p className="user_address">Address: <span className="user_address_info">{detail.address}</span></p>
+                    <div className="user_login">
+                        <p className="user_login_title">Login Information</p>
+                        <p className="user_login_username">Username: {detail.login.username}</p>
+                        <p className="user_login_password">Password: {detail.login.password}</p>
+                        <p className="user_login_uuid">UUID: {detail.login.uuid}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

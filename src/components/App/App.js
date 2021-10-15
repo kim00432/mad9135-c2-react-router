@@ -15,6 +15,7 @@ function App() {
     let resp = await fetch(url)
     let data = await resp.json()
     destructuring(data.results)
+    console.log("Fetching data")
   }
   useEffect(()=>{
     //all useEffect functions run on the initial render of the components
@@ -41,10 +42,8 @@ function App() {
     let index = 0;
     let newArr = [];
     data.forEach((element) => {
-        let url = element.picture.large.split("/")
-        let getId = url[url.length-1].split(".")
         let newObj = { 
-            userId: parseInt(getId[0]),
+            userId: index + 1,
             address: fullAddressArr[index],
             ...element
         }

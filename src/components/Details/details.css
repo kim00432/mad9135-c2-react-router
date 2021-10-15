@@ -1,0 +1,60 @@
+.user_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.user_details img {
+  width: 300px;
+  height: 300px;
+  margin-right: 2rem;
+  border-radius: 30px;
+}
+
+.user_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user_details_info2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.user_name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(9, 43, 71);
+}
+
+.user_cell,
+.user_email,
+.user_address,
+.user_login_title {
+  font-size: 1.2rem;
+  color: rgb(3, 98, 161);
+  font-weight: 600;
+}
+
+.user_cell_info,
+.user_email_info,
+.user_address_info,
+.user_login_info {
+  color: black;
+  font-weight: 400;
+}
+
+.user_login {
+  line-height: 20px;
+}
+
+.user_login_username,
+.user_login_password,
+.user_login_uuid {
+  font-size: 1.1rem;
+}
