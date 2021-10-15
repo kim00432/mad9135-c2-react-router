@@ -1,6 +1,7 @@
 import './details.css'
 import Loader from '../Loader/Loader'
 import { useParams } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 export default function Details(props) {
     function findUser(id) {
@@ -12,6 +13,8 @@ export default function Details(props) {
     console.log(detail)
 
     if(props.data.length === 0) {return <Loader />}
+    if(!detail) {return <Redirect to="/" />}
+
     return (
         <div className="user_details_container">  
             <div className="user_details">

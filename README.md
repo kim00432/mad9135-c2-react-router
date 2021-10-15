@@ -19,7 +19,7 @@
 
 - [x] The User Details page should show the full address (street, city, state, postcode), login information (uuid, username, password), and a larger image
 
-- [ ] There should be a top-level nav menu that lets the website user see a list of all of the names and addresses sorted by last name. This is the Address List page.
+- [x] There should be a top-level nav menu that lets the website user see a list of all of the names and addresses sorted by last name. This is the Address List page.
 
 - [x] You can also link a row in the Address List table to the User Details page.
 

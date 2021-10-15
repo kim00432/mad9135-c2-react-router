@@ -4,16 +4,15 @@ import { Table,TableHead,TableRow,TableCell,TableBody } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 export default function Addresses(props) {
-    const compareFirstLetterLastName = (a, b) => {
+    const compareLastName = (a, b) => {
         if (a < b) return -1;
         if(a > b ) return 1;
         return 0;
     }
     props.data.sort((a, b) => {
-    
-        return compareFirstLetterLastName(a.name.last, b.name.last)
+        return compareLastName(a.name.last, b.name.last)
     })
-    
+
     if(props.data.length === 0) {return <Loader />}
     return (
         <div className="addressList">
@@ -26,7 +25,6 @@ export default function Addresses(props) {
                     <TableCell className="tableHead">Details</TableCell>
                 </TableRow>
             </TableHead>
-            
             <TableBody>
                {props.data.map((item) => {
                 return (

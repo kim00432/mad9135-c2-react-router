@@ -20,7 +20,7 @@ export default function Home() {
               <li className="instructions_list">
                 <div className="li_title">User details page ('/users/:id' route)</div>
                 <ul className="ul_list">
-                  <li>- It shows the selected user's full address, login information, and a larger image.</li>
+                  <li>- It shows the selected user's more information such as full address, login information.</li>
                 </ul>
               </li>
               <li className="instructions_list">

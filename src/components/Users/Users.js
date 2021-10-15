@@ -3,6 +3,14 @@ import Loader from '../Loader/Loader'
 import { Link } from 'react-router-dom'
 
 export default function Users(props) {
+    const compareUserId = (a, b) => {
+        if (a < b) return -1;
+        if(a > b ) return 1;
+        return 0;
+    }
+    props.data.sort((a, b) => {
+        return compareUserId(a.userId, b.userId)
+    })
     if(props.data.length === 0) {return <Loader />}
     return (
         <div>
