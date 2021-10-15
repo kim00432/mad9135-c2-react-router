@@ -1,16 +1,19 @@
-.user_container {
+.user_details_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 3rem;
+  background-color: rgba(167, 167, 167, 0.123);
+  border-radius: 50px;
+  padding: 20px 40px 40px 40px;
 }
 
 .user_details img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin-right: 2rem;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 .user_details {
@@ -19,16 +22,21 @@
   justify-content: center;
 }
 
+.user_details_info1 {
+  margin-left: 1rem;
+}
+
 .user_details_info2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .user_name {
   font-size: 1.8rem;
   font-weight: 600;
+  text-align: center;
   color: rgb(9, 43, 71);
 }
 
@@ -50,7 +58,7 @@
 }
 
 .user_login {
-  line-height: 20px;
+  line-height: 15px;
 }
 
 .user_login_username,

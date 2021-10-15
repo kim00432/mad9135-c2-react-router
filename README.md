@@ -11,7 +11,7 @@
 - nat should be au,ca,nz,gb,us
 - data that is downloaded should be saved in state, so it can be used and filtered repeatedly. Remember to keep the state values lifted up to a component that allows the data to be used everywhere it is needed.
 
-- [ ] The Home page should display a welcome message and brief instructions on how to use the app.
+- [x] The Home page should display a welcome message and brief instructions on how to use the app.
 
 - [x] Your app should show a list of user cards on the User List page that display the values for name, email, cell, plus a medium or thumbnail image.
 

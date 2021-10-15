@@ -3,8 +3,6 @@ import Loader from '../Loader/Loader'
 import { useParams } from 'react-router-dom'
 
 export default function Details(props) {
-    console.log(props)
-    
     function findUser(id) {
         return props.data.find((item, index) => id == parseInt(item.userId))
     }
@@ -15,7 +13,7 @@ export default function Details(props) {
 
     if(props.data.length === 0) {return <Loader />}
     return (
-        <div className="user_container">  
+        <div className="user_details_container">  
             <div className="user_details">
                 <div className="user_details_info1">
                     <p className="user_name">{detail.name.first} {detail.name.last}</p>

@@ -11,7 +11,11 @@ function App() {
   const [data, setData] = useState([]) 
 
   async function fetchData() {
-    let url = `https://randomuser.me/api/?results=24&nat=au,ca,nz,gb,us&format=json&seed=kim00432`
+    function generateRandomNum(min, max) { // min and max included 
+      return Math.floor(Math.random() * (max - min + 1) + min)
+    }
+    const randomNum = generateRandomNum(16, 32)
+    let url = `https://randomuser.me/api/?results=${randomNum}&format=json&nat=au,ca,nz,gb,us&seed=kim00432`   
     let resp = await fetch(url)
     let data = await resp.json()
     destructuring(data.results)

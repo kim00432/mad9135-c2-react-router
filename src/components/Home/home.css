@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.instructions {
+  line-height: 2.8rem;
+}
+
+.li_title {
+  line-height: 1rem;
+}
+
+.instructions_list {
+  list-style: square;
+}
+
+.ul_list {
+  line-height: 2rem;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
