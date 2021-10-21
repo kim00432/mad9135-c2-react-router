@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/mad9135-c2-react-router/static/css/main.a74a6bf3.chunk.css",
+    "main.js": "/mad9135-c2-react-router/static/js/main.7f40d95d.chunk.js",
+    "main.js.map": "/mad9135-c2-react-router/static/js/main.7f40d95d.chunk.js.map",
+    "runtime-main.js": "/mad9135-c2-react-router/static/js/runtime-main.e665e12c.js",
+    "runtime-main.js.map": "/mad9135-c2-react-router/static/js/runtime-main.e665e12c.js.map",
+    "static/js/2.641b5427.chunk.js": "/mad9135-c2-react-router/static/js/2.641b5427.chunk.js",
+    "static/js/2.641b5427.chunk.js.map": "/mad9135-c2-react-router/static/js/2.641b5427.chunk.js.map",
+    "index.html": "/mad9135-c2-react-router/index.html",
+    "static/css/main.a74a6bf3.chunk.css.map": "/mad9135-c2-react-router/static/css/main.a74a6bf3.chunk.css.map",
+    "static/js/2.641b5427.chunk.js.LICENSE.txt": "/mad9135-c2-react-router/static/js/2.641b5427.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e665e12c.js",
+    "static/js/2.641b5427.chunk.js",
+    "static/css/main.a74a6bf3.chunk.css",
+    "static/js/main.7f40d95d.chunk.js"
+  ]
+}
